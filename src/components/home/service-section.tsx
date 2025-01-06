@@ -1,6 +1,8 @@
 import React from "react";
-import { Button } from "./ui/button";
-import { AnimatedButton } from "./ui/animated-button";
+import { AnimatedButton } from "../ui/animated-button";
+import { Button } from "../ui/button";
+import Container from "../ui/container";
+
 
 const ServiceSection = () => {
   const services = [
@@ -12,7 +14,7 @@ const ServiceSection = () => {
     "SEO Optimisation",
   ];
   return (
-    <section className="my-[120px] px-[90px]">
+    <Container>
       <h2 className="text-4xl text-[3.5vw] font-semibold tracking-tight mb-6">
         We&apos;re good at
       </h2>
@@ -46,7 +48,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 };
 

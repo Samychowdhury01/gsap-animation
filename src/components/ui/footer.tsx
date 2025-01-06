@@ -4,11 +4,12 @@ import { SiAwwwards } from "react-icons/si";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 import React from "react";
-import { AnimatedButton } from "./ui/animated-button";
+import { AnimatedButton } from "@/components/ui/animated-button";
+import Container from "./container";
 
 const Footer = () => {
   return (
-    <div className="py-[120px] px-[90px]">
+    <Container>
       <div className="flex justify-between items-start gap-24">
         {/* left text container */}
         <div className="flex-1 flex flex-col gap-12">
@@ -82,7 +83,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

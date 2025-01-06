@@ -6,6 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -69,6 +70,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  h1{
+    @apply text-[5.625vw] font-semibold;
+  }
   h2{
     @apply text-[2.778vw] font-semibold leading-tight
   }
@@ -85,3 +89,74 @@ body {
     @apply w-6 h-6 group-hover:scale-110 transition-transform duration-300 ease-linear;
   }
 }
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg,#545cff,#1f2246 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-bg {
+  position: relative;
+  background-image: url('../assets/logo-bg.svg');
+  background-position: right ;
+}
+
+
+.text-gradient-anim {
+  background: linear-gradient(to right, #545cff, #1f2246, #545cff);
+  background-size: 1600px 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s linear infinite forwards;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1600px 0;
+  }
+}
+
+
+/* .text-gradient-anim {
+  background: -webkit-linear-gradient(left,#545cff,#1f2246,#545cff);
+  background-size: 1600px 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: gradientMove;
+  -o-animation-name: gradientMove;
+  animation-name: gradientMove;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes gradientMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1600px 0;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1600px 0;
+  }
+} */
