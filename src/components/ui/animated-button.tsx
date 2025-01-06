@@ -4,11 +4,9 @@ import React from "react";
 import { ButtonProps } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-interface AnimatedButtonProps extends ButtonProps {
-  padding?: string;
-}
 
-export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
+
+export const AnimatedButton: React.FC<ButtonProps> = ({
   children,
   className,
   ...props
@@ -17,7 +15,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
     <button
       {...props}
       className={cn(
-        "relative overflow-hidden group inline-flex items-center justify-center transition-all duration-300",
+        "relative overflow-hidden group inline-flex items-center justify-center transition-all duration-300 hover:scale-105 ease-linear",
 
         className
       )}

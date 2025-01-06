@@ -18,10 +18,12 @@ const Footer = () => {
           </h2>
           <div className="space-y-6">
             <p className="text-gray-600">Get in touch</p>
-            <div className="space-y-3 text-xl font-medium">
-              <p>+44 207 112 82 85</p>
-              <p>contact@artistsweb.com</p>
-              <p>Artistsweb, 18 Soho Square, London, W1D 3QL, United Kingdom</p>
+            <div className="space-y-3">
+              <h3>+44 207 112 82 85</h3>
+              <h3>contact@artistsweb.com</h3>
+              <h3>
+                Artistsweb, 18 Soho Square, London, W1D 3QL, United Kingdom
+              </h3>
             </div>
           </div>
         </div>
@@ -31,40 +33,30 @@ const Footer = () => {
           <div className="bg-black text-white flex items-center justify-between px-10 py-3 rounded-full">
             <p className="text-xl">Follow us</p>
             <div className="flex items-center justify-between">
-              <a
-                href="#"
-                className="group p-4 border-2 border-transparent rounded-full hover:border-primary transition-all duration-500 ease-linear"
-              >
-                <FaInstagram className="size-6 group-hover:scale-110 transition-transform duration-500 ease-linear" />
+              <a href="#" className="footer-icon-link group">
+                <FaInstagram className="footer-icon" />
               </a>
-              <a
-                href="#"
-                className="group p-4 border-2 border-transparent rounded-full hover:border-primary transition-all duration-500 ease-linear"
-              >
-                <FaFacebook className="size-6 group-hover:scale-110 transition-transform duration-500 ease-linear" />
+              <a href="#" className="footer-icon-link group">
+                <FaFacebook className="footer-icon" />
               </a>
-              <a
-                href="#"
-                className="group p-4 border-2 border-transparent rounded-full hover:border-primary transition-all duration-500 ease-linear"
-              >
-                <FaXTwitter className="size-6 group-hover:scale-110 transition-transform duration-500 ease-linear" />
+              <a href="#" className="footer-icon-link group">
+                <FaXTwitter className="footer-icon" />
               </a>
-              <a
-                href="#"
-                className="group p-4 border-2 border-transparent rounded-full hover:border-primary transition-all duration-500 ease-linear"
-              >
-                <SiAwwwards className="size-6 group-hover:scale-110 transition-transform duration-500 ease-linear" />
+              <a href="#" className="footer-icon-link group">
+                <SiAwwwards className="footer-icon" />
               </a>
             </div>
           </div>
 
           {/* get started card */}
-          <div className="bg-[#ECF1F4] p-8 rounded-3xl text-center">
-            <h2 className="mb-4">Let's get started</h2>
-            <p className="text-gray-600 mb-6">
-              We'd love to hear about your project.
-            </p>
-            <AnimatedButton className="w-full text-white text-[1.5rem] font-medium py-4 px-8 rounded-full mt-12 bg-primary">
+          <div className="bg-[#ECF1F4] px-[60px] py-12 rounded-3xl text-center flex flex-col gap-12">
+            <div>
+              <h2 className="mb-4">Let's get started</h2>
+              <p className="text-gray-600 mb-6">
+                We'd love to hear about your project.
+              </p>
+            </div>
+            <AnimatedButton className="w-full text-white text-[1.5rem] font-medium py-4 px-8 rounded-full bg-primary">
               Get in touch
             </AnimatedButton>
           </div>

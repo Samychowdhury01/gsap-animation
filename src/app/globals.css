@@ -72,4 +72,16 @@ body {
   h2{
     @apply text-[2.778vw] font-semibold leading-tight
   }
+  h3{
+    @apply text-[1.5vw] font-semibold
+  }
+}
+
+@layer components {
+  .footer-icon-link {
+    @apply  p-4 border-2 border-transparent rounded-full hover:border-primary transition-all duration-300 ease-linear;
+  }
+  .footer-icon {
+    @apply w-6 h-6 group-hover:scale-110 transition-transform duration-300 ease-linear;
+  }
 }
